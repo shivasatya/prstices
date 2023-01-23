@@ -10,8 +10,8 @@ public class Controller {
 	public String name() {
 		return "Shiva";
 	}
-	@GetMapping("/call")
-	public String name() {
+	@GetMapping("/calls")
+	public String names() {
 		return "Shiva";
 	}
 }
