@@ -1,0 +1,9 @@
+FROM openjdk:8
+
+ARG JAR_FIE=target/*.jar
+
+COPY ${JAR_FIE} orderplant.jar
+
+ENTRYPOINT [ "java","-jar","orderplant.jar"]
+
+EXPOSE 9000
